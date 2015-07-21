@@ -13,8 +13,8 @@ import (
 )
 
 var (
-    file *string = flag.String("hostsFile", "", "use hostsfile")
-    cmd  *string = flag.String("cmd", "hostname", "execute command")
+    file = flag.String("hostsFile", "", "use hostsfile")
+    cmd  = flag.String("cmd", "hostname", "execute command")
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
     hosts = sshmux.GetHostsByFile(*file)
 
     var conf sshmux.Conf
-    conf.User = "centos"
+    conf.User = "<your username>"
     conf.Key = "<your key here>"
     conf.Command = *cmd
     sshmux.Ssh(hosts, conf)
