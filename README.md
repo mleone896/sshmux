@@ -9,5 +9,5 @@ More things are goig change, which is why i didn't fork, I'd rather maintain my 
 
 
 
-## Licence
+## License
 apache  
