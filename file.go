@@ -2,7 +2,6 @@ package sshmux
 
 import (
 	"bufio"
-	"io"
 	"os"
 	"strings"
 )
@@ -23,10 +22,10 @@ func GetHostsByFile(file string) []string {
 			}
 		}
 		// check for end of file
-		var err error
-		if err == io.EOF {
+		if readline == "" {
 			break
 		}
+
 	}
 	return hosts
 }
