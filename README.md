@@ -1,7 +1,9 @@
 # sshmux
-
-
 A lot of this code was google example code / somsone who put together a lib  
+
+
+# Install sshmux lib
+go get github.com/mleone896/sshmux
 
 # Example Usage
 
